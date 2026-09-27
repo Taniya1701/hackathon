@@ -1,0 +1,268 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #6c5ce7;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #6c5ce7;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: calc(100vh - 70px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 8%;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+            color: #6c5ce7;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #6c5ce7;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4834d4;
+            transform: translateY(-3px);
+        }
+
+        /* Image */
+        .hero-image {
+            width: 430px;
+            height: 430px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 120px;
+            box-shadow: 0 20px 50px rgba(108,92,231,0.3);
+        }
+
+        /* Features */
+        .features {
+            padding: 70px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 30px;
+            border-radius: 15px;
+            background: #f5f7ff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #6c5ce7;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .icon {
+            font-size: 45px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #6c5ce7;
+            color: white;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-image {
+                width: 280px;
+                height: 280px;
+                font-size: 80px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MyBrand</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Build Something <span>Amazing.</span></h1>
+
+            <p>
+                Create beautiful and modern websites that help
+                your business grow. Simple, fast and powerful.
+            </p>
+
+            <a href="#features" class="btn">Get Started →</a>
+        </div>
+
+        <div class="hero-image">
+            🚀
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Fast</h3>
+                <p>
+                    Lightning-fast performance and smooth
+                    user experience.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Beautiful</h3>
+                <p>
+                    Modern and attractive designs that look
+                    great on every device.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔒</div>
+                <h3>Secure</h3>
+                <p>
+                    Your information is protected with
+                    reliable security.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyBrand. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
